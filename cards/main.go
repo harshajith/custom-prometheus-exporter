@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"example/cards/deck"
+	"fmt"
+)
 
 func main() {
 
 	fmt.Println("hello world")
-	// cards := newDeck()
-	// cards.print()
-	// cards.saveToFile("mydeck")
+	cards := deck.NewDeck()
+	cards.Print()
+	cards.SaveToFile("mydeck")
 }
 
 // func newCard() string {

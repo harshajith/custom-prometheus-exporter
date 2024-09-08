@@ -2,7 +2,7 @@ go 1.22.1
 
 use (
 	./cards
+	./exporter
 	./kids-app-service
 	./otel
-	./exporter
 )

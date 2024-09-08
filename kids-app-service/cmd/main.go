@@ -3,14 +3,16 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	"../pkg/service"
 )
 
 func main() {
 	fmt.Println("Hello, world. REST-0")
-	// err := service.GetQuestions()
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
+	err := service.GetQuestions()
+	if err != nil {
+		fmt.Println(err)
+	}
 
 	mux := http.NewServeMux()
 
